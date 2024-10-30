@@ -1,5 +1,7 @@
 const express = require("express")
 const app = express()
+app.use(cors({ origin: 'http://127.0.0.1:5173' }));
+
 let data = {
     network : 11,
     jobs : 12,
